@@ -14,12 +14,6 @@ body {
     padding: 10px 20px;
 }
 
-.notificaciones img {
-    max-width: 30px;
-    height: auto;
-    
-}
-
 .logo-container {
     display: flex;
     align-items: center;
@@ -28,54 +22,66 @@ body {
 }
 
 .logo-container img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 120%;
 }
 
-.nav-button,
+
+
 .contact-button {
-    background-color: #FF6969; /* Cambiado a rojo */
+    background-color: #FF6969;
     color: rgb(0, 0, 0);
     padding: 10px 20px;
     border: 2px solid #000;
     border-radius: 100px;
     cursor: pointer;
-    font-size: 17;
-    gap: 5px;
+    font-size: 16px;
 }
 
-.left-buttons {
+/* Formulario */
+.form-row {
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
 }
 
-.left-buttons .nav-button {
-    background-color: #FF6969; /* Cambiado a rojo */
-    color: #000;
-    
+.form-field,
+.form-field-last {
+    width: 300px;
+    margin-bottom: 20px;
 }
 
-/* Contenido del mapa */
-.map-container {
-    text-align: center; /* Centra el mapa horizontalmente */
+.form-field select,
+.form-field input,
+.form-field-last input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
-iframe {
-    width: 70%;
-    height: 500px;
-    display: block;
-    margin: 20px auto;
+.Enviar-button {
+    background-color: #B1CFF3;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 /* Pie de Página */
 footer {
+    position: fixed;
+    bottom: 0;
     background-color: black;
     color: white;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
+    width: 99%; /* Asegura que ocupe todo el ancho */
 }
 
 .logos {
@@ -96,4 +102,16 @@ footer {
 
 .politicas a:hover {
     text-decoration: underline;
+}
+
+.additional-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.additional-links a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
 }
