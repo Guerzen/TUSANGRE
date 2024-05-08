@@ -1,0 +1,119 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Color de fondo */
+}
+
+/* Encabezado */
+.header {
+    background-color: #B1CFF3; /* Color de fondo del encabezado */
+    padding: 10px;
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 150px; /* Tamaño máximo del logo */
+    max-height: 150px;
+}
+
+/* Formulario */
+form {
+    background-color: #fff; /* Color de fondo del formulario */
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ajustar el tamaño del input incluyendo el relleno y el borde */
+}
+
+button[type="submit"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el ratón */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black; /* Cambio del color de los bordes */
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #B1CFF3; /* Color de fondo de las celdas del encabezado */
+}
+
+/* Pie de Página */
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px; /* Ajusta el margen superior para separar del contenido */
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+}
+
+.logos img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.politicas a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.politicas a:hover {
+    text-decoration: underline;
+}
+
+.additional-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.additional-links a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
