@@ -16,25 +16,29 @@
         </div>
     </div>
 
+    <div class="content">
+        <form action="Php/ModifiContra.php" method="post">
+
     <!-- Formulario -->
     <div class="form-row">
         <div class="form-field">
             <select id="tipoDocumento" name="tipoDocumento" required>
                 <option value="TipoIdentidad">Tipo de Documento</option>
                 <option value="Pasaporte">Pasaporte</option>
-                <option value="TarjetaIdentidad">Tarjeta de identidad</option>
                 <option value="CedulaExtranjeria">Cédula de extranjería</option>
                 <option value="CedulaCiudadania">Cédula de ciudadanía</option>
             </select>
         </div>
         <div class="form-field">
-            <input type="text" placeholder="Número de Documento">
+            <input type="text" placeholder="Número de Documento" name="numdoc"required>
         </div>
-        <div class="form-field">
-            <input type="password" placeholder="Correo electronico">
-        </div>
+       
         <button id="Bingresar" class="Enviar-button">Enviar</button>
     </div>
+</div>
+</form>
+
+
 
     <!-- Pie de Página -->
     <footer>

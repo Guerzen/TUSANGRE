@@ -17,29 +17,28 @@
     </div>
 
     <!-- Formulario -->
-    <div class="form-row">
+    <form class="form-row" action="Php/Validacion.php" method="post">
         <div class="form-field">
             <select id="tipoDocumento" name="tipoDocumento" required>
                 <option value="TipoIdentidad">Tipo de identidad</option>
                 <option value="Pasaporte">Pasaporte</option>
-                <option value="TarjetaIdentidad">Tarjeta de identidad</option>
                 <option value="CedulaExtranjeria">Cédula de extranjería</option>
                 <option value="CedulaCiudadania">Cédula de ciudadanía</option>
             </select>
         </div>
         <div class="form-field">
-            <input type="text" placeholder="Número de Documento">
+            <input type="text" placeholder="Número de Documento" name="numdoc">
         </div>
         <div class="form-field">
-            <input type="password" placeholder="Contraseña">
+            <input type="password" placeholder="Contraseña" name="pass">
         </div>
-        <button id="Bingresar" class="ingresar-button">Ingresar</button>
+        <button id="Bingresar" class="ingresar-button" type="submit">Ingresar</button>
         <div class="additional-links">
-            <a href="#">¿Olvidaste tu contraseña?</a>
+            <a href="contrasena.html">¿Olvidaste tu contraseña?</a>
             <br>
-            <a id="btncrearCuenta" href="#">Crear cuenta</a>
+            <a id="btncrearCuenta" href="registrar.html">Crear cuenta</a>
         </div>
-    </div>
+    </form>
 
     <!-- Pie de Página -->
     <footer>
@@ -62,7 +61,7 @@
             <a href="#">Términos de Uso</a>
         </div>
     </footer>
-    <script src="login.js"></script>
+
 
 </body>
 
